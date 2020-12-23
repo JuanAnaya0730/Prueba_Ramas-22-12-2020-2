@@ -14,6 +14,12 @@ int main(int argc, char *argv[])
     for(int var=0; var<TAM; ++var){
         cout << A[var] << endl;
     }
+    cout << "Imprimir solo los numeros de la cadena original" << endl;
+    for(int var=0; var<TAM; ++var){
+        if(A[var]>='0' && A[var]<='9'){
+            cout << A[var] << endl;
+        }
+    }
 
     //MainWindow w;
     //w.show();
