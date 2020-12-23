@@ -9,16 +9,22 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    char A[TAM] = {"AB11CD44"};
+    char A[TAM] = {"AB11CD447"};
+    char numeros[TAM] = {0};
+    int contDig = 0;
 
-    for(int var=0; var<TAM; ++var){
-        cout << A[var] << endl;
-    }
     cout << "Imprimir solo los numeros de la cadena original" << endl;
-    for(int var=0; var<TAM; ++var){
+    //int numero = 0;
+    //int contadorDigitos = 0;
+
+    for(int var = TAM - 1; var >= 0; --var){
         if(A[var]>='0' && A[var]<='9'){
-            cout << A[var] << endl;
+            numeros[contDig++] = A[var];
         }
+    }
+
+    for(int var = contDig-1; var >= 0; --var){
+        cout << numeros[var] << endl;
     }
 
     //MainWindow w;
