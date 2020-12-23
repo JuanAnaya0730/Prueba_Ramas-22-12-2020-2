@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     //int numero = 0;
     //int contadorDigitos = 0;
 
-    for(int var = TAM - 1; var < TAM; ++var){
+    for(int var = TAM - 1; var >= 0; --var){
         if(A[var]>='0' && A[var]<='9'){
             numeros[contDig++] = A[var];
         }
